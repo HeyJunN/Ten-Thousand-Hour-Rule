@@ -71,7 +71,7 @@
         </button>
         <button type="button">공유하기</button>
         <!-- 모달창 -->
-        <dialog id="FightingDialog">
+        <dialog id="FightingDialog" class="fighting-modal">
           <p>화이팅!!</p>
           <p>당신의 꿈을 응원합니다!</p>
           <img src="/img/licat.png" alt="라이캣이 응원하는 이미지" />
@@ -89,5 +89,18 @@
         </p>
       </section>
     </footer>
+    <script>
+      const dialog = document.getElementById("FightingDialog");
+      const showFightingBtn = document.getElementById("showFightingBtn");
+      const closeBtn = document.getElementById("closeBtn");
+
+      showFightingBtn.addEventListener("click", () => {
+        dialog.showModal();
+      });
+
+      closeBtn.addEventListener("click", () => {
+        dialog.close();
+      });
+    </script>
   </body>
 </html>
