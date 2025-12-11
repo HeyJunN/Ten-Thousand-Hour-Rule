@@ -53,26 +53,30 @@ body {
   font-size: 1.4rem;
 }
 
+.strong {
+  font-weight: 1000;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 36px 16px 36px 16px;
+  margin: 3.6rem 1.6rem 3.6rem 1.6rem;
 }
 
 .hero {
-  width: 298px;
-  height: 190px;
-  margin: 0px 16px 70px 16px;
+  width: 29.8rem;
+  height: 19rem;
+  margin: 0rem 1.6rem 7rem 1.6rem;
 }
 
 .title img {
   width: 100%;
   aspect-ratio: 278/130;
   object-fit: cover;
-  margin: 0px 10px 36px 10px;
+  margin: 0rem 1rem 3.6rem 1rem;
 }
 
 .hero h2 {
@@ -82,5 +86,5 @@ body {
 }
 
 main {
-  height: 584px;
+  height: 58.4rem;
 }
