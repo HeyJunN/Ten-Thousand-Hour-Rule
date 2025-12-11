@@ -29,32 +29,30 @@
         <section class="claculator">
           <form action="#" method="get">
             <!-- input 연동 필요 -->
-            <div>
-              <label for="field"></label>
-              <p>
-                나는
-                <input
-                  type="text"
-                  name="field"
-                  placeholder="예&#41;프로그래밍"
-                />
-                전문가가 될 것이다.
-              </p>
-            </div>
-            <div>
-              <label for="hour"></label>
-              <p>
-                그래서 앞으로 매일 하루에
-                <input type="text" name="hour" placeholder="예&#41;5" />
-                시간씩 훈련할 것이다.
-              </p>
-            </div>
+            <p class="txt-wrap">
+              <label for="field">나는</label>
+              <input
+                type="text"
+                name="field"
+                id="field"
+                placeholder="예&#41;프로그래밍"
+              />
+              전문가가 될 것이다.
+            </p>
+
+            <p class="txt-wrap txt-wrap-break">
+              <label for="hour">그래서 앞으로 매일 하루에</label>
+              <input type="text" name="hour" id="hour" placeholder="예&#41;5" />
+              시간씩 훈련할 것이다.
+            </p>
+
             <!-- result 연동 필요 -->
-            <input
-              type="submit"
-              value="나는 며칠 동안 훈련을 해야 1만 시간이 될까?"
-            />
-            <img src="./img/click.png" alt="검지손가락이 클릭하는 아이콘" />
+            <div class="submit-btn">
+              <input
+                type="submit"
+                value="나는 며칠 동안 훈련을 해야 1만 시간이 될까?"
+              />
+            </div>
           </form>
           <div class="result">
             <!-- 일단 하드코딩, 추후 변경 필요 -->
