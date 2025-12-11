@@ -9,86 +9,90 @@
     <title>1만 시간의 법칙</title>
   </head>
   <body>
-    <header>
-      <section class="hero">
-        <div class="title">
-          <img src="/img/title.png" alt="1만 시간 법칙 타이틀 썸네일" />
-          <img src="/img/clock.png" alt="썸네일용 시계 뒷배경" />
-        </div>
-        <h2>"연습은 어제의 당신보다 당신을 더 낫게 만든다."</h2>
-      </section>
-    </header>
-    <main>
-      <section class="intro">
-        <img src="/img/quotes.png" alt="인용구" />
-        <p class="intro-desc">
-          <strong>1만 시간의 법칙</strong>은<br />
-          어떤 분야의 전문가가 되기 위해서는<br />
-          최소한 1만 시간의 훈련이 필요하다는 법칙이다.
-        </p>
-      </section>
-      <section class="claculator">
-        <form action="#" method="get">
-          <!-- input 연동 필요 -->
-          <div>
-            <label for="field"></label>
+    <div class="container">
+      <header>
+        <section class="hero">
+          <div class="title">
+            <img src="/img/title.png" alt="1만 시간 법칙 타이틀 썸네일" />
+          </div>
+          <h2>"연습은 어제의 당신보다 당신을 더 낫게 만든다."</h2>
+        </section>
+      </header>
+      <main>
+        <section class="intro">
+          <img src="/img/quotes.png" alt="인용구" />
+          <p class="intro-desc">
+            <strong>1만 시간의 법칙</strong>은<br />
+            어떤 분야의 전문가가 되기 위해서는<br />
+            최소한 1만 시간의 훈련이 필요하다는 법칙이다.
+          </p>
+        </section>
+        <section class="claculator">
+          <form action="#" method="get">
+            <!-- input 연동 필요 -->
+            <div>
+              <label for="field"></label>
+              <p>
+                나는
+                <input
+                  type="text"
+                  name="field"
+                  placeholder="예&#41;프로그래밍"
+                />
+                전문가가 될 것이다.
+              </p>
+            </div>
+            <div>
+              <label for="hour"></label>
+              <p>
+                그래서 앞으로 매일 하루에
+                <input type="text" name="hour" placeholder="예&#41;5" />
+                시간씩 훈련할 것이다.
+              </p>
+            </div>
+            <!-- result 연동 필요 -->
+            <input
+              type="submit"
+              value="나는 며칠 동안 훈련을 해야 1만 시간이 될까?"
+            />
+            <img src="./img/click.png" alt="검지손가락이 클릭하는 아이콘" />
+          </form>
+          <div class="result">
+            <!-- 일단 하드코딩, 추후 변경 필요 -->
             <p>
-              나는
-              <input type="text" name="field" placeholder="예&#41;프로그래밍" />
-              전문가가 될 것이다.
+              당신은 <span class="strong">프로그래밍</span> 전문가가 되기 위해서
+            </p>
+            <p>
+              대략 <span class="strong">5110</span> 일 이상 훈련하셔야 합니다!
+              :&#41;
             </p>
           </div>
-          <div>
-            <label for="hour"></label>
-            <p>
-              그래서 앞으로 매일 하루에
-              <input type="text" name="hour" placeholder="예&#41;5" />
-              시간씩 훈련할 것이다.
-            </p>
-          </div>
-          <!-- result 연동 필요 -->
-          <input
-            type="submit"
-            value="나는 며칠 동안 훈련을 해야 1만 시간이 될까?"
-          />
-          <img src="./img/click.png" alt="검지손가락이 클릭하는 아이콘" />
-        </form>
-        <div class="result">
-          <!-- 일단 하드코딩, 추후 변경 필요 -->
-          <p>
-            당신은 <span class="strong">프로그래밍</span> 전문가가 되기 위해서
+        </section>
+        <section class="action-btn">
+          <button type="button" id="showFightingBtn">
+            훈련하러 가기 GO! Go!
+          </button>
+          <button type="button">공유하기</button>
+          <!-- 모달창 -->
+          <dialog id="FightingDialog" class="fighting-modal">
+            <p>화이팅!!</p>
+            <p>당신의 꿈을 응원합니다!</p>
+            <img src="/img/licat.png" alt="라이캣이 응원하는 이미지" />
+            <button id="closeBtn">종료하고 진짜 훈련하러 가기 GO!Go!</button>
+          </dialog>
+        </section>
+      </main>
+      <footer>
+        <section class="weniv">
+          <img src="./img/logo.png" alt="위니브 로고" />
+          <p class="copyright">
+            본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 위니브에 있습니다.
+            <br />
+            수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
           </p>
-          <p>
-            대략 <span class="strong">5110</span> 일 이상 훈련하셔야 합니다!
-            :&#41;
-          </p>
-        </div>
-      </section>
-      <section class="action-btn">
-        <!-- 버튼 연결 필요 -->
-        <button type="button" id="showFightingBtn">
-          훈련하러 가기 GO! Go!
-        </button>
-        <button type="button">공유하기</button>
-        <!-- 모달창 -->
-        <dialog id="FightingDialog" class="fighting-modal">
-          <p>화이팅!!</p>
-          <p>당신의 꿈을 응원합니다!</p>
-          <img src="/img/licat.png" alt="라이캣이 응원하는 이미지" />
-          <button id="closeBtn">종료하고 진짜 훈련하러 가기 GO!Go!</button>
-        </dialog>
-      </section>
-    </main>
-    <footer>
-      <section class="weniv">
-        <img src="./img/logo.png" alt="위니브 로고" />
-        <p class="copyright">
-          본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 위니브에 있습니다.
-          <br />
-          수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
-        </p>
-      </section>
-    </footer>
+        </section>
+      </footer>
+    </div>
     <script>
       const dialog = document.getElementById("FightingDialog");
       const showFightingBtn = document.getElementById("showFightingBtn");

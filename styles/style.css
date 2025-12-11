@@ -42,7 +42,40 @@
   --color-bg: #5b2386;
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
+  font-family: "GmarketSansMedium", sans-serif;
+  font-size: 1.4rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 35px 15px 35px 15px;
+}
+
+.hero {
+  width: 297px;
+  height: 198px;
+}
+
+.title img {
+  width: 100%;
+  aspect-ratio: 278/130;
+  object-fit: cover;
+  margin: 0px 9px 35px 9px;
+}
+
+.hero h2 {
+  font-family: "OTEnjoystoriesBA", sans-serif;
+  font-size: 2.2rem;
+  color: var(--color-secondary);
 }
