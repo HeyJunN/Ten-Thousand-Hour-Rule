@@ -42,6 +42,18 @@
   --color-bg: #5b2386;
 }
 
+/* 웹 접근성을 고려한 대체 텍스트 처리 */
+.a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
 html {
   font-size: 10px;
 }
@@ -57,34 +69,38 @@ body {
   font-weight: 1000;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin: 3.6rem 1.6rem 3.6rem 1.6rem;
-}
+/* 모바일 버전 */
 
-.hero {
-  width: 29.8rem;
-  height: 19rem;
-  margin: 0rem 1.6rem 7rem 1.6rem;
-}
+@media (max-width: 767px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 30px);
+    margin: 3.6rem auto;
+  }
 
-.title img {
-  width: 100%;
-  aspect-ratio: 278/130;
-  object-fit: cover;
-  margin: 0rem 1rem 3.6rem 1rem;
-}
+  header {
+    width: 29.8rem;
+    height: 19rem;
+    margin: 0rem 1.6rem 7rem 1.6rem;
+  }
 
-.hero h2 {
-  font-family: "OTEnjoystoriesBA", sans-serif;
-  font-size: 2.2rem;
-  color: var(--color-secondary);
-}
+  header img {
+    width: 100%;
+    aspect-ratio: 278/130;
+    object-fit: cover;
+    margin: 0rem 1rem 3.6rem 1rem;
+  }
 
-main {
-  height: 58.4rem;
+  header h2 {
+    font-family: "OTEnjoystoriesBA", sans-serif;
+    font-size: 2.2rem;
+    color: var(--color-secondary);
+  }
+
+  main {
+    height: 58.4rem;
+  }
 }
