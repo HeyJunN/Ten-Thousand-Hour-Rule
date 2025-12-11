@@ -59,23 +59,28 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 35px 15px 35px 15px;
+  margin: 36px 16px 36px 16px;
 }
 
 .hero {
-  width: 297px;
-  height: 198px;
+  width: 298px;
+  height: 190px;
+  margin: 0px 16px 70px 16px;
 }
 
 .title img {
   width: 100%;
   aspect-ratio: 278/130;
   object-fit: cover;
-  margin: 0px 9px 35px 9px;
+  margin: 0px 10px 36px 10px;
 }
 
 .hero h2 {
   font-family: "OTEnjoystoriesBA", sans-serif;
   font-size: 2.2rem;
   color: var(--color-secondary);
+}
+
+main {
+  height: 584px;
 }
