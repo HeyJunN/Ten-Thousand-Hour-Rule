@@ -66,41 +66,59 @@ body {
 }
 
 .strong {
+  font-size: 2rem;
   font-weight: 1000;
 }
 
 /* 모바일 버전 */
+.container {
+  width: calc(100% - 30px);
+  margin: 3.4rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+}
 
-@media (max-width: 767px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: calc(100% - 30px);
-    margin: 3.6rem auto;
-  }
+header {
+  width: 29.8rem;
+  height: 19rem;
+  margin: 0rem 1.6rem 7rem 1.6rem;
+}
 
-  header {
-    width: 29.8rem;
-    height: 19rem;
-    margin: 0rem 1.6rem 7rem 1.6rem;
-  }
+header img {
+  width: 100%;
+  aspect-ratio: 278 / 130;
+  object-fit: cover;
+  margin: 0rem 1rem 3.6rem 1rem;
+}
 
-  header img {
-    width: 100%;
-    aspect-ratio: 278/130;
-    object-fit: cover;
-    margin: 0rem 1rem 3.6rem 1rem;
-  }
+header h2 {
+  font-family: "OTEnjoystoriesBA", sans-serif;
+  font-size: 2.2rem;
+  color: var(--color-secondary);
+}
 
-  header h2 {
-    font-family: "OTEnjoystoriesBA", sans-serif;
-    font-size: 2.2rem;
-    color: var(--color-secondary);
-  }
+main {
+  height: 58.4rem;
+}
 
-  main {
-    height: 58.4rem;
-  }
+.intro {
+  aspect-ratio: 330/68;
+  width: 100%;
+  position: relative;
+}
+
+.intro img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.intro p {
+  position: absolute;
+  top: -20%;
+  width: 100%;
+  text-align: center;
+  line-height: 2.6rem;
 }
