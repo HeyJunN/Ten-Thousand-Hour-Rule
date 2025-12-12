@@ -28,7 +28,6 @@
         <h3 class="a11y-hidden">1만 시간의 법칙 계산</h3>
         <section class="calculator">
           <form action="#" method="get">
-            <!-- input 연동 필요 -->
             <p class="txt-wrap">
               <label for="field">나는</label>
               <input
@@ -46,7 +45,6 @@
               시간씩 훈련할 것이다.
             </p>
 
-            <!-- result 연동 필요 -->
             <div class="submit-btn">
               <input
                 type="submit"
@@ -55,13 +53,14 @@
             </div>
           </form>
           <div class="result">
-            <!-- 일단 하드코딩, 추후 변경 필요 -->
             <p>
-              당신은 <span class="strong">프로그래밍</span> 전문가가 되기 위해서
+              당신은
+              <span class="strong field-result">프로그래밍</span> 전문가가 되기
+              위해서
             </p>
             <p>
-              대략 <span class="strong">5110</span> 일 이상 훈련하셔야 합니다!
-              :&#41;
+              대략 <span class="strong time-result">5110</span> 일 이상
+              훈련하셔야 합니다! :&#41;
             </p>
           </div>
         </section>
@@ -90,18 +89,7 @@
         </p>
       </footer>
     </div>
-    <script>
-      const dialog = document.getElementById("FightingDialog");
-      const showFightingBtn = document.getElementById("showFightingBtn");
-      const closeBtn = document.getElementById("closeBtn");
-
-      showFightingBtn.addEventListener("click", () => {
-        dialog.showModal();
-      });
-
-      closeBtn.addEventListener("click", () => {
-        dialog.close();
-      });
-    </script>
+    <script src="src/calc.js"></script>
+    <script src="src/modal.js"></script>
   </body>
 </html>
