@@ -186,7 +186,7 @@ p input::placeholder {
   font-family: "GmarketSansBold", sans-serif;
   white-space: normal;
   word-break: keep-all;
-  line-height: 1.4;
+  line-height: auto;
   cursor: pointer;
 }
 
@@ -263,4 +263,53 @@ footer .copyright {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 0.9rem;
   white-space: nowrap;
+}
+
+.fighting-modal {
+  width: 33rem;
+  height: 50rem;
+  background-color: var(--color-text);
+  border-style: none;
+  border-radius: 2rem;
+  box-shadow: 0.4rem 0.4rem 3rem rgba(0, 0, 0, 0.15);
+  padding: 4rem;
+}
+
+.fighting-modal p {
+  font-family: "OTEnjoystoriesBA", sans-serif;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.fighting-modal p:nth-child(1) {
+  font-size: 6.4rem;
+}
+
+.fighting-modal p:nth-child(2) {
+  font-size: 3.2rem;
+}
+
+.fighting-modal img {
+  width: 100%;
+  aspect-ratio: 250 / 188;
+  object-fit: cover;
+  margin-top: 3.8rem;
+  z-index: 0;
+}
+
+.fighting-modal button {
+  width: 25rem;
+  height: 7.2rem;
+  border-style: none;
+  border-radius: 1.2rem;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  font-size: 1.4rem;
+  font-family: "GmarketSansBold", sans-serif;
+  white-space: normal;
+  word-break: keep-all;
+  line-height: auto;
+  cursor: pointer;
+  z-index: 1;
+  transform: translate(0, -4rem);
 }
