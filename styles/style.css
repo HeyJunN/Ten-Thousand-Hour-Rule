@@ -83,7 +83,7 @@ strong {
 header {
   width: 29.8rem;
   height: 19rem;
-  margin: 0rem 1.6rem 7rem 1.6rem;
+  margin: 0rem 1.6rem;
 }
 
 header img {
@@ -100,6 +100,7 @@ header h2 {
 }
 
 main {
+  width: 33rem;
   height: 58.4rem;
 }
 
@@ -107,7 +108,7 @@ main {
   aspect-ratio: 330/68;
   width: 100%;
   position: relative;
-  margin-bottom: 6rem;
+  margin-bottom: 5rem;
 }
 
 .intro img {
@@ -124,6 +125,7 @@ main {
 }
 
 form {
+  width: 100%;
   text-align: center;
   margin: 0 0.6em;
   position: relative;
@@ -153,10 +155,11 @@ p input::placeholder {
 
 /* 인풋창 좌우 여백 */
 .txt-wrap input {
-  margin: 0 1rem 1rem;
+  margin: 0 0.8rem;
 }
 
 .txt-wrap-break {
+  margin-top: 1rem;
   flex-wrap: wrap; /* 공간 부족 시 줄바꿈 허용 */
 }
 
@@ -217,4 +220,47 @@ p input::placeholder {
   font-family: "GmarketSansBold", sans-serif;
   font-size: 2.4rem;
   margin: 0rem 1.2rem;
+}
+
+.action-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.action-btn .train-btn {
+  border-radius: 1.2rem;
+  width: 20.4rem;
+  height: 4.6rem;
+  font-family: "GmarketSansBold", sans-serif;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  border-style: none;
+  cursor: pointer;
+}
+
+.action-btn .share-btn {
+  border-radius: 1.2rem;
+  width: 10.2rem;
+  height: 4.6rem;
+  font-family: "GmarketSansBold", sans-serif;
+  color: var(--color-primary);
+  border-style: none;
+  cursor: pointer;
+}
+
+footer {
+  margin: 0 3.4rem;
+}
+
+footer img {
+  margin: 0rem 6.8rem 1.2rem;
+}
+
+footer .copyright {
+  text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 0.9rem;
+  white-space: nowrap;
 }
