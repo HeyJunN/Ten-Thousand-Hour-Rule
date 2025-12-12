@@ -65,6 +65,10 @@ body {
   font-size: 1.4rem;
 }
 
+strong {
+  font-family: "GmarketSansBold", sans-serif;
+}
+
 /* 모바일 버전 */
 .container {
   width: calc(100% - 30px);
@@ -74,10 +78,6 @@ body {
   justify-content: center;
   align-items: center;
   gap: 7rem;
-}
-
-strong {
-  font-family: "GmarketSansBold", sans-serif;
 }
 
 header {
@@ -97,6 +97,7 @@ header h2 {
   font-family: "OTEnjoystoriesBA", sans-serif;
   font-size: 2.2rem;
   color: var(--color-secondary);
+  text-align: center;
 }
 
 main {
@@ -105,13 +106,14 @@ main {
 }
 
 .intro {
-  aspect-ratio: 330/68;
   width: 100%;
   position: relative;
   margin-bottom: 5rem;
 }
 
 .intro img {
+  aspect-ratio: 330/68;
+  object-fit: contain;
   width: 100%;
   vertical-align: middle;
 }
@@ -251,6 +253,7 @@ p input::placeholder {
 }
 
 footer {
+  text-align: center;
   margin: 0 3.4rem;
 }
 
@@ -312,4 +315,162 @@ footer .copyright {
   cursor: pointer;
   z-index: 1;
   transform: translate(0, -4rem);
+}
+
+/* 데스크탑 버전 (769px 이상) */
+@media screen and (min-width: 769px) {
+  .container {
+    width: calc(100% - 1148px);
+    margin: 8rem auto;
+    gap: 10em;
+  }
+
+  header {
+    width: 56.4rem;
+    height: 33rem;
+    margin: 0rem 10.4rem;
+  }
+
+  header img {
+    width: 100%;
+    margin-bottom: 2.4rem;
+  }
+
+  header h2 {
+    font-size: 3.6rem;
+  }
+
+  main {
+    width: 77.2rem;
+    height: 95rem;
+  }
+
+  .intro {
+    margin-bottom: 12rem;
+  }
+
+  .intro p {
+    font-size: 1.8rem;
+    top: 20%;
+    line-height: 4rem;
+  }
+
+  strong {
+    font-size: 2.4rem;
+  }
+
+  form {
+    font-size: 2.4rem;
+  }
+  /* 인풋창 크기 및 간격 확대 */
+  p input {
+    width: 22.8rem;
+    height: 5.7rem;
+    font-size: 2.4rem;
+    margin: 0 2rem; /* 좌우 간격 넓힘 */
+  }
+
+  p input::placeholder {
+    font-size: 2.4rem;
+  }
+
+  /* 첫 번째 줄(.txt-wrap) & 두 번째 줄(.txt-wrap-break) 공통 설정 */
+  .txt-wrap,
+  .txt-wrap-break {
+    justify-content: center; /* 가로 중앙 정렬 */
+    margin-bottom: 2rem;
+  }
+
+  /* 두 번째 줄: 모바일에서 꺾였던(wrap) 것을 한 줄(nowrap)로 펴기 */
+  .txt-wrap-break {
+    flex-wrap: nowrap;
+    margin-top: 0; /* 모바일용 여백 제거 */
+  }
+
+  /* 라벨 초기화: 모바일에서 width: 100%였던 것을 글자 크기만큼(auto)으로 변경 */
+  .txt-wrap-break label {
+    width: auto;
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  /* 4. 결과 확인 버튼 (노란 버튼) 확대 */
+  .submit-btn {
+    margin: 10rem 10.2rem;
+  }
+
+  .submit-btn input {
+    width: 56.8rem;
+    height: 6.4rem;
+    font-size: 2.4rem;
+  }
+
+  .submit-btn::after {
+    bottom: -1.5rem;
+    right: -7rem;
+    width: 6.4rem;
+    height: 7.2rem;
+  }
+
+  /* 5. 결과 텍스트 확대 */
+  .result {
+    font-size: 2.4rem;
+    line-height: 1.2;
+  }
+
+  .strong {
+    font-size: 7.2rem;
+    vertical-align: sub; /* 텍스트 라인 맞춤 */
+  }
+
+  /* 6. 하단 버튼 확대 */
+  .action-btn {
+    gap: 1.2rem;
+  }
+
+  .action-btn .train-btn {
+    width: 36.6rem;
+    height: 6.4rem;
+    font-size: 2.4rem;
+  }
+
+  .action-btn .share-btn {
+    width: 19.4rem;
+    height: 6.4rem;
+    font-size: 2.4rem;
+  }
+
+  /* 7. 푸터 & 모달 */
+  footer img {
+    margin: 0rem 9rem 2rem;
+  }
+
+  footer .copyright {
+    font-size: 1.2rem;
+  }
+
+  .fighting-modal {
+    width: 80rem;
+    height: 80rem;
+    padding: 8.2rem 14.6rem;
+  }
+
+  .fighting-modal p:nth-child(1) {
+    font-size: 9.6rem;
+  }
+
+  .fighting-modal p:nth-child(1)::after {
+    content: "♥♥♥";
+  }
+
+  .fighting-modal p:nth-child(2) {
+    font-size: 3.6rem;
+  }
+
+  .fighting-modal button {
+    width: 50.8rem;
+    height: 6.4rem;
+    font-size: 2.4rem;
+    transform: translateY(4rem);
+  }
 }
