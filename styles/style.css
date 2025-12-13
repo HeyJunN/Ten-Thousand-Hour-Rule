@@ -69,6 +69,19 @@ strong {
   font-family: "GmarketSansBold", sans-serif;
 }
 
+/* Chrome, Safari, Edge, Opera용 스피너 숨기기 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox용 스피너 숨기기 */
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
 /* 모바일 버전 */
 .container {
   width: calc(100% - 30px);
