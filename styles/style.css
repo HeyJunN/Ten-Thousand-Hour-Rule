@@ -93,7 +93,7 @@ header img {
   margin: 0rem 1rem 3.6rem 1rem;
 }
 
-header h2 {
+header p {
   font-family: "OTEnjoystoriesBA", sans-serif;
   font-size: 2.2rem;
   color: var(--color-secondary);
@@ -340,7 +340,7 @@ footer .copyright {
     margin-bottom: 2.4rem;
   }
 
-  header h2 {
+  header p {
     font-size: 3.6rem;
   }
 
