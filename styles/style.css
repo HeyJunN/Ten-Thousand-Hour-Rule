@@ -174,16 +174,16 @@ p input::placeholder {
   font-family: "GmarketSansMedium", sans-serif;
 }
 
+/* 인풋창 좌우 여백 */
+.txt-wrap input {
+  margin: 0 0.8rem;
+}
+
 .txt-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
   line-height: 2.4rem;
-}
-
-/* 인풋창 좌우 여백 */
-.txt-wrap input {
-  margin: 0 0.8rem;
 }
 
 .txt-wrap-break {
@@ -327,9 +327,8 @@ footer .copyright {
 }
 
 .fighting-modal img {
-  width: 100%;
-  aspect-ratio: 240 / 188;
-  object-fit: cover;
+  width: 24rem;
+  height: 18.8rem;
   margin: 2.4rem 0.55rem;
 }
 
@@ -359,18 +358,19 @@ footer .copyright {
   .container {
     width: calc(100% - 1148px);
     margin: 8rem auto;
-    gap: 10em;
+    gap: 16rem;
   }
 
   header {
     width: 56.4rem;
-    height: 33rem;
-    margin: 0rem 10.4rem;
+    height: 32.9rem;
+    margin: 0rem 10.35rem;
   }
 
   header img {
-    width: 100%;
-    margin-bottom: 2.4rem;
+    width: 56.4rem;
+    height: 26.5rem;
+    margin: 0rem 0rem 2.4rem 0rem;
   }
 
   header p {
@@ -378,18 +378,24 @@ footer .copyright {
   }
 
   main {
-    width: 77.2rem;
-    height: 95rem;
+    width: 77.9rem;
+    height: 94.9rem;
   }
 
   .intro {
     margin-bottom: 12rem;
   }
 
-  .intro p {
+  .intro img {
+    display: block; /* 가운데 정렬을 위해 블록 요소로 변경 */
+    width: 48.5rem;
+    height: auto; /* 비율 깨짐 방지 */
+    margin: 0 auto; /* 좌우 중앙 정렬 */
+  }
+
+  .intro .intro-desc {
+    width: calc(100% - 5.6rem);
     font-size: 1.8rem;
-    top: 20%;
-    line-height: 4rem;
   }
 
   strong {
@@ -398,37 +404,39 @@ footer .copyright {
 
   form {
     font-size: 2.4rem;
+    margin: 0;
   }
+
   /* 인풋창 크기 및 간격 확대 */
   p input {
     width: 22.8rem;
-    height: 5.7rem;
+    height: 5.6rem;
     font-size: 2.4rem;
-    margin: 0 2rem; /* 좌우 간격 넓힘 */
   }
 
   p input::placeholder {
     font-size: 2.4rem;
   }
 
-  /* 첫 번째 줄(.txt-wrap) & 두 번째 줄(.txt-wrap-break) 공통 설정 */
-  .txt-wrap,
-  .txt-wrap-break {
-    justify-content: center; /* 가로 중앙 정렬 */
-    margin-bottom: 2rem;
+  .txt-wrap input {
+    margin: 0 2rem; /* 좌우 간격 넓힘 */
+  }
+
+  .txt-wrap {
+    line-height: 5.2rem;
   }
 
   /* 두 번째 줄: 모바일에서 꺾였던(wrap) 것을 한 줄(nowrap)로 펴기 */
   .txt-wrap-break {
     flex-wrap: nowrap;
-    margin-top: 0; /* 모바일용 여백 제거 */
+    margin-top: 2rem;
   }
 
   /* 라벨 초기화: 모바일에서 width: 100%였던 것을 글자 크기만큼(auto)으로 변경 */
   .txt-wrap-break label {
     width: auto;
-    margin-bottom: 0;
     text-align: left;
+    margin-bottom: 0;
   }
 
   /* 4. 결과 확인 버튼 (노란 버튼) 확대 */
@@ -437,7 +445,7 @@ footer .copyright {
   }
 
   .submit-btn input {
-    width: 56.8rem;
+    width: 56.7rem;
     height: 6.4rem;
     font-size: 2.4rem;
   }
@@ -452,7 +460,8 @@ footer .copyright {
   /* 5. 결과 텍스트 확대 */
   .result {
     font-size: 2.4rem;
-    line-height: 1.2;
+    gap: 2rem;
+    margin-bottom: 12rem;
   }
 
   .strong {
@@ -465,25 +474,34 @@ footer .copyright {
     gap: 1.2rem;
   }
 
+  .train-btn,
+  .share-btn {
+    padding: 2rem, 5rem;
+  }
+
   .action-btn .train-btn {
-    width: 36.6rem;
+    width: 36.5rem;
     height: 6.4rem;
     font-size: 2.4rem;
   }
 
   .action-btn .share-btn {
-    width: 19.4rem;
+    width: 19.3rem;
     height: 6.4rem;
     font-size: 2.4rem;
   }
 
   /* 7. 푸터 & 모달 */
+  footer {
+    margin: 0rem 20.3rem;
+  }
   footer img {
     margin: 0rem 9rem 2rem;
   }
 
   footer .copyright {
     font-size: 1.2rem;
+    line-height: 1.4rem;
   }
 
   .fighting-modal {
@@ -492,22 +510,32 @@ footer .copyright {
     padding: 8.2rem 14.6rem;
   }
 
-  .fighting-modal p:nth-child(1) {
+  .fighting-modal p:nth-child(2) {
     font-size: 9.6rem;
   }
 
-  .fighting-modal p:nth-child(1)::after {
+  .fighting-modal p:nth-child(2)::after {
     content: "♥♥♥";
   }
 
-  .fighting-modal p:nth-child(2) {
+  .fighting-modal p:nth-child(3) {
     font-size: 3.6rem;
+  }
+
+  .fighting-modal img {
+    width: 43.8rem;
+    height: 34.2rem;
+    margin: 4rem 3.5em;
+  }
+
+  .fighting-modal button br {
+    display: none;
   }
 
   .fighting-modal button {
     width: 50.8rem;
     height: 6.4rem;
+    white-space: nowrap;
     font-size: 2.4rem;
-    transform: translateY(4rem);
   }
 }
