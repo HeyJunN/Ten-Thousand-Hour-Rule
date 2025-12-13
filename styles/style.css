@@ -82,10 +82,15 @@ input[type="number"] {
   appearance: textfield;
 }
 
+.orange {
+  filter: brightness(0) saturate(100%) invert(60%) sepia(94%) saturate(1000%)
+    hue-rotate(360deg) brightness(100%) contrast(95%);
+}
+
 /* 모바일 버전 */
 .container {
   width: calc(100% - 30px);
-  margin: 3.4rem auto;
+  margin: 3.5rem 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -94,8 +99,8 @@ input[type="number"] {
 }
 
 header {
-  width: 29.8rem;
-  height: 19rem;
+  width: 29.7rem;
+  height: 18.6rem;
   margin: 0rem 1.6rem;
 }
 
