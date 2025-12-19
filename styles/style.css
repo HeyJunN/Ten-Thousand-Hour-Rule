@@ -363,7 +363,8 @@ footer .copyright {
 
   header {
     width: 56.4rem;
-    height: 32.9rem;
+    height: auto;
+
     margin: 0rem 10.35rem;
   }
 
@@ -379,7 +380,7 @@ footer .copyright {
 
   main {
     width: 77.9rem;
-    height: 94.9rem;
+    height: auto;
   }
 
   .intro {
