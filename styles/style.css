@@ -364,7 +364,6 @@ footer .copyright {
   header {
     width: 56.4rem;
     height: auto;
-
     margin: 0rem 10.35rem;
   }
 
@@ -530,13 +529,13 @@ footer .copyright {
   }
 
   .fighting-modal button br {
-    display: none;
+    display: none; /* 줄바꿈 태그 숨김 */
   }
 
   .fighting-modal button {
     width: 50.8rem;
     height: 6.4rem;
-    white-space: nowrap;
+    white-space: nowrap; /* 텍스트 한 줄 처리 */
     font-size: 2.4rem;
   }
 }
